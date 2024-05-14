@@ -18,10 +18,28 @@ class ComponentToPrint extends React.Component {
       <div className="book">
         <div className="page">
           <div className="subpage">
-            <h1>Resume</h1>
-            <h2>{me.name}</h2>
+            <h1>{me.name}</h1>
+            <div className="info-row">
+                <span>{me.title}</span>
+                <span>Phone: {me.contact.phone}</span>
+                <span>Web: {me.contact.website}</span>
+            </div>
+            
+            <div className="info-row">
+                <span>{me.age} years old, currently based in {me.location}</span>
+                <span>email: {me.contact.phone}</span>
+            </div>
             <div class="newspaper">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu 
             </div>
           </div>
         </div>

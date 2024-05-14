@@ -41,4 +41,8 @@ body {
       page-break-after: always;
     }
   }
+
+  .newspaper {
+    column-count: 3;
+  }
   

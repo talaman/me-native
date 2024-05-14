@@ -20,14 +20,14 @@ class ComponentToPrint extends React.Component {
           <div className="subpage">
             <h1 className="h1-name">{me.name}</h1>
             <div className="info-row">
-                <span>{me.title}</span>
+                <span style={{paddingRight:180}}>{me.title}.</span>
                 <span>Phone: {me.contact.phone}</span>
                 <span>Web: {me.contact.website}</span>
             </div>
             
             <div className="info-row">
-                <span>{me.age} years old, currently based in {me.location}</span>
-                <span>email: {me.contact.phone}</span>
+                <span>{me.age} years old, currently based in {me.location}.</span>
+                <span>Email: {me.contact.phone}</span>
             </div>
             <div className="newspaper">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu 

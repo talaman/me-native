@@ -18,7 +18,7 @@ class ComponentToPrint extends React.Component {
       <div className="book">
         <div className="page">
           <div className="subpage">
-            <h1>{me.name}</h1>
+            <h1 className="h1-name">{me.name}</h1>
             <div className="info-row">
                 <span>{me.title}</span>
                 <span>Phone: {me.contact.phone}</span>
@@ -29,7 +29,7 @@ class ComponentToPrint extends React.Component {
                 <span>{me.age} years old, currently based in {me.location}</span>
                 <span>email: {me.contact.phone}</span>
             </div>
-            <div class="newspaper">
+            <div className="newspaper">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu 
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu 
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu 

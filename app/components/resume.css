@@ -13,7 +13,7 @@ body {
 .page {
   width: 21cm;
   min-height: 29.7cm;
-  padding: 2cm;
+  padding: 1cm;
   margin: 1cm auto;
   border: 1px #d3d3d3 solid;
   border-radius: 5px;
@@ -22,10 +22,10 @@ body {
 }
 
 .subpage {
-  padding: 1cm;
+  /* padding: 1cm; */
   border: 1px black solid;
-  height: 256mm;
-  outline: 2cm #ffeaea solid;
+  height: 276mm;
+  outline: 1cm #ffeaea solid;
 }
 
 @page {
@@ -49,10 +49,23 @@ body {
 .newspaper {
   column-count: 3;
   margin-top: 10px;
+  column-gap: 40px;
+  column-rule: 4px double #ff00ff;
 }
 
 .info-row {
   display: flex;
   margin-top: 10px;
   justify-content: space-between;
+}
+
+.h1-name {
+  font-size: 20px;
+  font-weight: normal;
+  font-family:'Forum';
+  width: 100%;
+  letter-spacing: 2px;
+  text-align-last:justify;
+  /* word-spacing: 2px; */
+  text-transform: uppercase;
 }

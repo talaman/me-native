@@ -58,7 +58,7 @@ class ComponentToPrint extends React.Component {
                 <ul>
                   {me.education.map((edu, index) => (
                     <li key={index}>
-                      <strong>{edu.degree}</strong>, {edu.institution}, {edu.year}.
+                      <h3><strong>{edu.degree}</strong>, <i>{edu.institution}</i>, {edu.year}.</h3>
                     </li>
                   ))}
                 </ul>
@@ -68,9 +68,8 @@ class ComponentToPrint extends React.Component {
                 <ul>
                   {me.work_history.map((job, index) => (
                     <li key={index}>
-                      <strong>{job.title}</strong>, {job.company}, {job.startDate}-{job.endDate}
-                      <br />
-                      {job.description}
+                      <h3><strong>{job.title}</strong>, <i>{job.company}</i>{job.website!==""?` (${job.website})`:""}, {job.location}, {job.period}</h3>
+                      <p>{job.description}</p>
                     </li>
                   ))}
                 </ul>
@@ -80,7 +79,7 @@ class ComponentToPrint extends React.Component {
                 <ul>
                   {me.languages.map((language, index) => (
                     <li key={index}>
-                      {language.language}, {language.level}.
+                      <strong>{language.language}</strong>, {language.level}.
                     </li>
                   ))}
                 </ul>
@@ -90,7 +89,7 @@ class ComponentToPrint extends React.Component {
                 <ul>
                   {me.references.map((reference, index) => (
                     <li key={index}>
-                      <strong>{reference.name}</strong>, {reference.title}, {reference.company}
+                      <strong>{reference.name}</strong>, {reference.title}, <i>{reference.company}</i>
                       <br />
                       LinkedIn: {reference.linkedin}
                       <br />
@@ -102,9 +101,9 @@ class ComponentToPrint extends React.Component {
             </div>
           </div>
         </div>
-        <div className="page">
+        {/* <div className="page">
           <div className="subpage">Page 2/2</div>
-        </div>
+        </div> */}
       </div>
     );
   }

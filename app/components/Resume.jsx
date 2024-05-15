@@ -3,15 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import ReactToPrint from "react-to-print";
 import "./resume.css";
 import me from '../assets/data/me.json';
-import { Image } from 'react-native';
 
-const data = [
-  {
-    name: "AAA",
-    lastname: "BBB",
-    mobile: "123"
-  }
-];
 
 class ComponentToPrint extends React.Component {
   render() {

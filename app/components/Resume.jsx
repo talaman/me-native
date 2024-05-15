@@ -22,7 +22,7 @@ class ComponentToPrint extends React.Component {
             <h1 className="h1-name">{me.name}</h1>
             <div className="info-row">
               <span>{me.title}.</span>
-              <span style={{ paddingRight: 25 }}>Phone: {me.contact.phone}</span>
+              <span style={{ paddingRight: 28 }}>Phone: {me.contact.phone}</span>
               <span>Web: {me.contact.website}</span>
             </div>
 

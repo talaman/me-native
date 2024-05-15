@@ -53,6 +53,25 @@ body {
   column-rule: 4px double #ff00ff;
 }
 
+.newspaper h2 {
+  font-size: medium;
+}
+
+.newspaper p {
+  font-size: small;
+}
+.newspaper ul {
+  font-size: small;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.newspaper img {
+  width: 100%;
+  height: auto;
+}
+
+
 .info-row {
   display: flex;
   margin-bottom: 5px;
@@ -80,3 +99,4 @@ body {
   /* word-spacing: 2px; */
   text-transform: uppercase;
 }
+

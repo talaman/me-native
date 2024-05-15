@@ -48,17 +48,22 @@ body {
 
 .newspaper {
   column-count: 3;
-  /* margin-top: 10px; */
+  margin-top: 10px;
   column-gap: 40px;
   column-rule: 4px double #ff00ff;
 }
 
 .newspaper h2 {
   font-size: medium;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .newspaper p {
   font-size: small;
+  margin-top: 0;
+text-align: justify;
 }
 .newspaper ul {
   font-size: small;
@@ -89,7 +94,7 @@ body {
   margin-bottom: 8px;
   padding-left: 5px;
   padding-right: 5px;
-  font-size: 25px;
+  font-size: x-large;
   font-weight: lighter;
   font-family:'Forum';
   color: #185212;

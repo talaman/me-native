@@ -21,15 +21,15 @@ class ComponentToPrint extends React.Component {
           <div className="subpage">
             <h1 className="h1-name">{me.name}</h1>
             <div className="info-row">
-              <span style={{ paddingRight: 150 }}>{me.title}.</span>
-              <span>Phone: {me.contact.phone}</span>
+              <span>{me.title}.</span>
+              <span style={{ paddingRight: 25 }}>Phone: {me.contact.phone}</span>
               <span>Web: {me.contact.website}</span>
             </div>
 
             <div className="info-row">
-              <span>{me.age} years old, currently based in {me.location}.</span>
+              <span>Currently based in {me.location}.</span>
               <span>LinkedIn: {me.contact.linkedin}</span>
-              <span>Email: {me.contact.phone}</span>
+              <span>Email: {me.contact.email}</span>
             </div>
             <div className="newspaper">
               <img src='../assets/images/photo.jpg' alt="My Image" />
@@ -58,7 +58,7 @@ class ComponentToPrint extends React.Component {
                 <ul>
                   {me.education.map((edu, index) => (
                     <li key={index}>
-                      {edu.degree}, {edu.institution}, {edu.year}.
+                      <strong>{edu.degree}</strong>, {edu.institution}, {edu.year}.
                     </li>
                   ))}
                 </ul>
@@ -68,7 +68,7 @@ class ComponentToPrint extends React.Component {
                 <ul>
                   {me.work_history.map((job, index) => (
                     <li key={index}>
-                      {job.title}, {job.company}, {job.startDate}-{job.endDate}
+                      <strong>{job.title}</strong>, {job.company}, {job.startDate}-{job.endDate}
                       <br />
                       {job.description}
                     </li>
@@ -90,7 +90,7 @@ class ComponentToPrint extends React.Component {
                 <ul>
                   {me.references.map((reference, index) => (
                     <li key={index}>
-                      {reference.name}, {reference.title}, {reference.company}
+                      <strong>{reference.name}</strong>, {reference.title}, {reference.company}
                       <br />
                       LinkedIn: {reference.linkedin}
                       <br />

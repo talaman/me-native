@@ -23,8 +23,11 @@ jobs:
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
+      worworking-directory: app
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: cd app && npm ci
-    - run: cd app && npm run build --if-present
+    - run: npm ci
+      workworking-directory: app
+    - run: npm run build --if-present
+      worworking-directory: app

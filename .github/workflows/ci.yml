@@ -16,8 +16,9 @@ jobs:
         with:
           node-version: 20
       - run: cd app && npm ci
+      - run: cd app && npx expo export --platform web
 
-  publish-gpr:
+  publish:
     needs: build
     runs-on: ubuntu-latest
     permissions:
@@ -30,7 +31,7 @@ jobs:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
       - run: cd app && npm ci
-      - run: cd app && npm run build --if-present
+      - run: cd app && npx expo export --platform web
       #- run: cd app && npm publish
       #  env:
       #    NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

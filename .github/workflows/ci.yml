@@ -37,8 +37,5 @@ jobs:
         with:
           name: dist-without-markdown
           path: |
-            dist
-            !dist/**/*.md
-      #- run: cd app && npm publish
-      #  env:
-      #    NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+            app/dist
+            !app/dist/**/*.md

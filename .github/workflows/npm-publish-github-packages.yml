@@ -30,6 +30,6 @@ jobs:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
       - run: cd app && npm ci
-      - run: cd app && npm publish
+      - run: cd app && npm adduser && npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

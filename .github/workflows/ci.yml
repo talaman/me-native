@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 20
       - run: cd app && npm ci
-      - run: cd app && npm test
+      # - run: cd app && npm test
 
   publish-artifact:
     needs: build

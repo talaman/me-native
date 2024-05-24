@@ -24,7 +24,7 @@ class ComponentToPrint extends React.Component {
               <span>Email: {me.contact.email}</span>
             </div>
             <div className="newspaper">
-              <img src='../assets/images/photo.jpg' alt="My Image" />
+              <img src='images/photo.jpg' alt="My Photo" />
 
               <h2>Personal Statement</h2>
               <p>

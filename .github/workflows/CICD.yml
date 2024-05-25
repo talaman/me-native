@@ -66,7 +66,8 @@ jobs:
   deploy-prod:
       name: 🚀 Deploy prod
       environment: prod
-      needs: deploy-dev      
+      needs: deploy-dev
+      if: github.ref_name == 'main'      
       runs-on: ubuntu-latest
       steps:
       - name: 🚚 Get latest code from artifact dist

@@ -41,7 +41,9 @@ jobs:
             !app/dist/**/*.md
   deploy-dev:
       name: 🎉 Deploy dev
-      environment: dev
+      environment: 
+        name: dev
+        url: https://me-native-dev.talaman.info/
       needs: publish-artifact
       runs-on: ubuntu-latest
       steps:
@@ -65,7 +67,9 @@ jobs:
 
   deploy-prod:
       name: 🚀 Deploy prod
-      environment: prod
+      environment: 
+        name: prod
+        url: https://me-native.talaman.info/
       needs: deploy-dev
       if: github.ref_name == 'main'            
       runs-on: ubuntu-latest

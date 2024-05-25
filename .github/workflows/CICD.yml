@@ -49,13 +49,11 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: dist
-          path: artifacts
+          path: dist
 
       - name: Display structure of downloaded files
-        run: cd artifacts && ls -R
-        
-      - name: 📂 Unzip artifact
-        run: unzip artifacts/dist.zip -d dist
+        run: ls -R dist
+
       
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5

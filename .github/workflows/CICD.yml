@@ -51,8 +51,11 @@ jobs:
           name: dist
           path: artifacts
 
+      - name: Display structure of downloaded files
+        run: cd artifacts && ls -R
+        
       - name: 📂 Unzip artifact
-        run: unzip artifacts/*.zip -d dist
+        run: unzip artifacts/dist.zip -d dist
       
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5

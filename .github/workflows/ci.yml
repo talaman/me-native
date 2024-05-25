@@ -39,3 +39,22 @@ jobs:
           path: |
             app/dist
             !app/dist/**/*.md
+  deploy-dev:
+      name: 🎉 Deploy dev
+      environment: dev
+      needs: publish-artifact
+      runs-on: ubuntu-latest
+      steps:
+      - name: 🚚 Get latest code from artifact dist
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+      
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          local-dir: dist
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}

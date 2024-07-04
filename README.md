@@ -8,6 +8,8 @@ The app is built using React Native and utilizes JSON data to populate the resum
 
 You can check the production version of the app at [me-native.talaman.info](https://me-native.talaman.info/) that was deployed using GitHub Actions.
 
+The CI/CD pipeline for this project is automated using GitHub Actions:
+
 ![image](https://github.com/talaman/me-native/assets/497042/15aecc25-b84c-437d-a5ba-8eeb8aeadd37)
 
 ## Features

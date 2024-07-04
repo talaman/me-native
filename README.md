@@ -2,12 +2,31 @@
 
 # me-native
 
-This is an app to create my own resume using React Native. 
+Welcome to the `me-native` repository! This project is a personal endeavor to create a dynamic and interactive resume using React Native. It showcases my skills, projects, and experiences in a A4 format.
 
-## Installation
+You can check the production version of the app [here](https://me-native.talaman.info/) that was deployed using GitHub Actions.
+
+## Features
+
+- **Downloadable Resume:** An application that presents my professional background and skills, and allows users to download a PDF version of my resume.
+- **React Native Framework:** Utilizes React Native for cross-platform compatibility and responsive design.
+- **Customizable Content:** Easily update and customize content to reflect current skills and experiences.
+- **CI/CD Pipeline:** Automated CI/CD pipeline for testing and deployment.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js installed on your machine.
+- An IDE or editor of your choice (VSCode recommended).
+
+### Installation
+
+Clone the repository and install dependencies:
 
 ```bash
-cd app
+git clone https://github.com/talaman/me-native.git
+cd me-native/app
 npm install
 ```
 
@@ -16,6 +35,8 @@ npm install
 ```bash
 npm start
 ```
+
+
 
 
 

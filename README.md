@@ -10,7 +10,7 @@ You can check the production version of the app at [me-native.talaman.info](http
 
 The CI/CD pipeline for this project is automated using GitHub Actions:
 
-![image](https://github.com/talaman/me-native/assets/497042/15aecc25-b84c-437d-a5ba-8eeb8aeadd37)
+![image](https://github.com/talaman/me-native/assets/497042/63fd55d1-72bd-405b-a1d6-3716835ca0b6)
 
 ## Features
 

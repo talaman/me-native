@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View } from 'react-native';
 import ReactToPrint from "react-to-print";
 import "./resume.css";
-import me from '../assets/data/me.json';
+import me from '../public/data/me.json';
 
 
 class ComponentToPrint extends React.Component {

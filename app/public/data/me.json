@@ -52,7 +52,7 @@
       "year": "2014"
     },
     {
-      "degree": "MBA",
+      "degree": "Executive MBA",
       "institution": "IEDE Business School",
       "year": "2017"
     },
@@ -165,8 +165,8 @@
   "references": [
     {
       "name": "Søren Michael Nielsen",
-      "title": "Senior Engineering Manager",
-      "company": "Maersk",
+      "title": "Engineering Manager",
+      "company": "Uber",
       "linkedin": "smnie",
       "phone": "+45 40 19 35 25"
     },

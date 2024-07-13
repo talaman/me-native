@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import ReactToPrint from "react-to-print";
 import "./resume.css";
 import me from '../public/data/me.json';
-
+import { FaLinkedin, FaGithub, FaEnvelope, FaPhoneAlt, FaHandPaper  } from 'react-icons/fa';
 
 class ComponentToPrint extends React.Component {
   render() {
@@ -14,14 +14,35 @@ class ComponentToPrint extends React.Component {
             <h1 className="h1-name">{me.name}</h1>
             <div className="info-row">
               <span>{me.title}.</span>
-              <span style={{ paddingRight: 28 }}>Phone: {me.contact.phone}</span>
-              <span>Web: {me.contact.website}</span>
+              <span style={{ paddingLeft: 190 }}>
+                <a className="icon-link" href={`tel:${me.contact.phone}`}>
+                  <FaPhoneAlt /> {me.contact.phone}
+                </a>
+                </span>
+              <span>
+                <a className="icon-link" href={`https://${me.contact.website}`} target="_blank" rel="noopener noreferrer">
+                  <FaHandPaper /> {me.contact.website}
+                </a>
+                </span>
             </div>
 
             <div className="info-row">
               <span>Currently based in {me.location}.</span>
-              <span>LinkedIn: {me.contact.linkedin}</span>
-              <span>Email: {me.contact.email}</span>
+              <span>
+                <a className="icon-link" href={`https://www.linkedin.com/in/${me.contact.linkedin}`} target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin /> {me.contact.linkedin}
+                </a>
+              </span>
+              <span>
+                <a className="icon-link" href={`https://github.com/${me.contact.github}`} target="_blank" rel="noopener noreferrer">
+                  <FaGithub /> {me.contact.github}
+                </a>
+              </span>
+              <span>
+                <a className="icon-link" href={`mailto:${me.contact.email}`}>
+                  <FaEnvelope /> {me.contact.email}
+                </a>
+              </span>
             </div>
             <div className="newspaper">
               <img src='images/photo.jpg' alt="My Photo" />
@@ -60,7 +81,7 @@ class ComponentToPrint extends React.Component {
                 <ul>
                   {me.work_history.map((job, index) => (
                     <li key={index}>
-                      <h3><strong>{job.title}</strong>, <i>{job.company}</i>{job.website!==""?` (${job.website})`:""}, {job.location}, {job.period}</h3>
+                      <h3><strong>{job.title}</strong>, <i>{job.company}</i>{job.website !== "" ? ` (${job.website})` : ""}, {job.location}, {job.period}</h3>
                       <p>{job.description}</p>
                     </li>
                   ))}
@@ -93,9 +114,6 @@ class ComponentToPrint extends React.Component {
             </div>
           </div>
         </div>
-        {/* <div className="page">
-          <div className="subpage">Page 2/2</div>
-        </div> */}
       </div>
     );
   }
@@ -104,9 +122,13 @@ class ComponentToPrint extends React.Component {
 class Resume extends React.Component {
   render() {
     return (
-      <View style={{ flex: 1, alignItems: "center" }}>
+      <View style={{ flex: 1, alignItems: "center", marginVertical: 20 }}>
         <ReactToPrint
-          trigger={() => <button>Print this out!</button>}
+          trigger={() => (
+            <button className="button-print">
+              Print this out!
+            </button>
+          )}
           content={() => this.componentRef}
         />
         <ComponentToPrint ref={(el) => (this.componentRef = el)} />

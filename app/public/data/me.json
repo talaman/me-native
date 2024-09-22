@@ -5,9 +5,9 @@
   "photo": "./photo.jpg",
   "age": 36,
   "nationality": "Chilean",
-  "location": "Copenhagen",
+  "location": "Spain",
   "contact": {
-    "phone": "+4552755971",
+    "phone": "+34613443843",
     "email": "daniel.talaman@gmail.com",
     "website": "hello.talaman.info",
     "linkedin": "danieltala",
@@ -99,8 +99,8 @@
       "company": "TDC net",
       "website": "tdcnet.dk",
       "location": "Denmark",
-      "period": "3/2022-Present",
-      "description": "Developing and implementing ML pipelines, Kubeflow, Kubernetes, MLflow, Argo, Terraform, and MLOps practices for the Advanced Analytics and AI team. Building CI/CD/CT pipelines to streamline deployment. Creating APIs, microservices, and apps to capture and label data. Ensuring the scalability and reliability of data science solutions through robust MLOps methodologies."
+      "period": "3/2022-9/2024",
+      "description": "Developing and implementing ML pipelines, model APIs and data drift monitoring, Kubeflow, Kubernetes, MLflow, Argo, Terraform, and MLOps practices for the Advanced Analytics and AI team. Building CI/CD/CT pipelines to streamline deployment. Creating APIs, microservices, and apps to capture and label data. Ensuring the scalability and reliability of data science solutions through robust MLOps methodologies."
     },
     {
       "title": "AI Specialist",

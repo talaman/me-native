@@ -165,18 +165,22 @@
   ],
   "references": [
     {
-      "name": "Søren Michael Nielsen",
+      "name": "Astrid K. Kyhl",
+      "title": "VP, Head of Data & AI",
+      "company": "TDC net",
+      "linkedin": "astrid-katrine-kyhl-4381104"
+    },
+    {
+      "name": "Søren M. Nielsen",
       "title": "Engineering Manager",
       "company": "Uber",
-      "linkedin": "smnie",
-      "phone": "+45 40 19 35 25"
+      "linkedin": "smnie"
     },
     {
       "name": "Per M. Butschkow",
       "title": "IT-udviklingschef",
-      "company": "Københavns Universitet",
-      "linkedin": "butschkow",
-      "phone": "+45 20 11 77 97"
+      "company": "University of Copenhagen",
+      "linkedin": "butschkow"
     }
   ]
 }

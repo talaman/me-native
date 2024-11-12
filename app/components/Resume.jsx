@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import ReactToPrint from "react-to-print";
 import "./resume.css";
 import me from '../public/data/me.json';
-import { FaLinkedin, FaGithub, FaEnvelope, FaPhoneAlt, FaHandPaper  } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaPhoneAlt, FaHandPaper } from 'react-icons/fa';
 
 class ComponentToPrint extends React.Component {
   render() {
@@ -18,12 +18,12 @@ class ComponentToPrint extends React.Component {
                 <a className="icon-link" href={`tel:${me.contact.phone}`}>
                   <FaPhoneAlt /> {me.contact.phone}
                 </a>
-                </span>
+              </span>
               <span>
                 <a className="icon-link" href={`https://${me.contact.website}`} target="_blank" rel="noopener noreferrer">
                   <FaHandPaper /> {me.contact.website}
                 </a>
-                </span>
+              </span>
             </div>
 
             <div className="info-row">
@@ -91,7 +91,7 @@ class ComponentToPrint extends React.Component {
                 <h2>Languages</h2>
                 <ul>
                   {me.languages.map((language, index) => (
-                    <li key={index}>
+                    <li style={{ marginBottom: 2 }}  key={index}>
                       <strong>{language.language}</strong>, {language.level}.
                     </li>
                   ))}
@@ -104,9 +104,9 @@ class ComponentToPrint extends React.Component {
                     <li key={index}>
                       <strong>{reference.name}</strong>, {reference.title}, <i>{reference.company}</i>
                       <br />
-                      LinkedIn: {reference.linkedin}
-                      <br />
-                      Phone: {reference.phone}
+                      <a className="icon-link" href={`https://www.linkedin.com/in/${reference.linkedin}`} target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin /> {reference.linkedin}
+                      </a>
                     </li>
                   ))}
                 </ul>
